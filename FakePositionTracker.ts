@@ -4,8 +4,10 @@ import {ICoordinates} from "ICoordinates";
 export default class FakePositionTracker implements IPositionTracker {
     private index = 0;
 
-    constructor(private positions: ICoordinates[]) {
+    constructor(private positions: ICoordinates[]) { }
 
+    isApplicable(): boolean {
+        return true;
     }
 
     subscribe(onNewPosition: (coords: ICoordinates) => void): void {

@@ -2,8 +2,10 @@
 import {ICoordinates} from "ICoordinates";
 
 export default class GeoLocationPositionTracker implements IPositionTracker {
-    constructor(private enableHighAccuracy: boolean = true) {
+    constructor(private enableHighAccuracy: boolean = true) { }
 
+    isApplicable(): boolean {
+        return 'geolocation' in navigator;
     }
 
     subscribe(onNewPosition: (coords: ICoordinates) => void): void {

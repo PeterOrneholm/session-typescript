@@ -3,24 +3,15 @@
 <head>
     <title>TypeScript</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />    
 </head>
 <body>
     <h1>TypeScript GPS</h1>
 
     <iframe id="map"
             frameborder="0"
-            style="border: 0; width: 100%; height: 400px;"
             allowfullscreen></iframe>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.22/system.js"></script>
-    <script>
-        System.defaultJSExtensions = true;
-
-        System.config({
-            baseURL: '/'
-        });
-
-        System.import('app.js');
-    </script>
+    <script data-main="app" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
 </body>
 </html>
