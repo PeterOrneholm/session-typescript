@@ -1,4 +1,4 @@
-﻿import {ICoordinates} from "ICoordinates";
+﻿import {ICoordinates} from "./ICoordinates";
 
 export interface IPositionTracker {
     isApplicable() : boolean;

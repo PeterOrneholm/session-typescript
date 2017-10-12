@@ -1,5 +1,5 @@
-﻿import {IPositionTracker} from "IPositionTracker";
-import {ICoordinates} from "ICoordinates";
+﻿import {IPositionTracker} from "./IPositionTracker";
+import {ICoordinates} from "./ICoordinates";
 
 export default class IpLocationPositionTracker implements IPositionTracker {
     isApplicable(): boolean {
