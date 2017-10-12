@@ -1,8 +1,8 @@
-﻿import {IPositionTracker} from "IPositionTracker";
-import GeoLocationPositionTracker from "GeoLocationPositionTracker";
-import IpLocationPositionTracker from "IpLocationPositionTracker";
-import FakePositionTracker from "FakePositionTracker";
-import BestPositionTracker from "BestPositionTracker";
+﻿import {IPositionTracker} from "./IPositionTracker";
+import GeoLocationPositionTracker from "./GeoLocationPositionTracker";
+import IpLocationPositionTracker from "./IpLocationPositionTracker";
+import FakePositionTracker from "./FakePositionTracker";
+import BestPositionTracker from "./BestPositionTracker";
 
 class App {
     private googleMapsKey = 'AIzaSyDKqLjN02JGD3rcIXizXJnp2sLYILLorTo';
